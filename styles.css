@@ -3,6 +3,10 @@
    License: none (public domain)
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+/* ------ CSS RESET ------ */
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -48,42 +52,92 @@ table {
 }
 
 
+
+
 html, body {
   height: 100%;
 }
 
-body {
+
+.background {
   margin: 0;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: hsl(185, 75%, 39%);
+  font-family: 'Kumbh Sans', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: hsl(229, 23%, 23%);
+  background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+  background-position: bottom 50vh right 50vw, top 50vh left 50vw, top;
+  background-repeat: no-repeat;
 }
 
+
 .card {
-  border-radius: 10px;
+  border-radius: 15px;
   height: 370px;
   width: 350px;
   border: 0;
+  margin: auto;
 }
 
-#card-bg-img {
-  border-radius: 10px 10px 0px 0px;
+.card-bg img {
+  border-radius: 15px 15px 0px 0px;
 }
+
+.profile-pic img {
+  border: 5px white solid;
+  border-radius: 50%;
+  position: absolute;
+  padding: 0px;
+  margin: 85px 120px;
+}
+
+.sub {
+  font-weight: 400;
+  color: hsl(0, 0%, 59%);
+  font-size: 10px;
+  letter-spacing: 2px;
+  margin: 5px;
+}
+
+.name {
+  margin-top: 70px;
+}
+
+.name .sub {
+  font-size: 14px;
+  margin: 10px;
+  letter-spacing: 0px;
+}
+
+.name span {
+  font-weight: 400;
+  color: hsl(0, 0%, 59%);
+  margin-left: 5px;
+}
+
 
 .numbers {
-  border-top: 0.5px grey solid;
+  border-top: 0.5px hsl(0, 0%, 89%) solid;
+  margin-top: auto;
+  padding: 30px 20px 20px 20px;
+  
 }
+
 
 
 .attribution {
   font-size: 11px;
-  /* text-align: center; */
-  
+  margin-bottom: 5px;;
 }
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+  font-weight: 400;
 }
 
